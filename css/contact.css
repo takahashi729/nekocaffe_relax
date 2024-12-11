@@ -1,0 +1,207 @@
+@import url(common.css);
+/* 全体上余白 */
+article {
+  padding-top: 72px;
+  padding-bottom: 66px;
+}
+/* 見出し */
+article h1 {
+  font-size: 35px;
+  font-family: Zen Maru Gothic;
+  color: #595959;
+  max-width: fit-content;
+  margin-left: auto;
+  margin-right: auto;
+  margin-bottom: 66px;
+  padding: 27px 90px;
+  background-image: url(../img/contact.img/title-back.svg);
+  background-repeat: no-repeat;
+  background-position: left 0 top 10px;
+}
+/* お問い合わせに応じて…のp */
+p.setumei {
+  color: #000;
+  text-align: center;
+}
+/* 下余白:10px、行の高さ:1.5 */
+main article > p {
+  padding-bottom: 10px;
+  line-height: 1.5;
+}
+/* 注意書き中央寄せ */
+aside {
+  width: fit-content;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 30px;
+  border: 1px solid #cd1b1b;
+  padding: 5px;
+  margin-bottom: 66px;
+}
+/* 注意書き内容 */
+main aside ul {
+  color: #000;
+  font-size: 16px;
+  line-height: 1.5;
+  list-style-type: disc;
+  margin-left: 1.5em;
+}
+div.back-yellow {
+  background-color: #ffffec;
+  padding-top: 46px;
+  padding-bottom: 46px;
+}
+main form {
+  width: 80%;
+  margin-left: auto;
+  margin-right: auto;
+  padding-left: 10px;
+}
+dl div:first-child {
+  display: flex;
+  padding-bottom: 50px;
+  align-items: flex-start;
+  gap: 175px;
+}
+dl div:nth-child(2) {
+  display: flex;
+  padding-bottom: 50px;
+  align-items: flex-start;
+  gap: 102px;
+}
+dl div:nth-child(3) {
+  display: flex;
+  padding-bottom: 50px;
+  align-items: flex-start;
+  gap: 70px;
+}
+dl div:nth-child(4) {
+  display: flex;
+  padding-bottom: 50px;
+  align-items: flex-start;
+  gap: 75px;
+}
+
+form dt {
+  color: #000;
+}
+form dt span {
+  color: #cd1b1b;
+  font-size: 15px;
+}
+
+dd label {
+  display: block;
+  color: #000;
+  padding-bottom: 25px;
+}
+/* 幅比率:auto */
+main dd {
+  flex: auto;
+}
+
+/* 幅:100%、内側余白:8px、アウトライン:なし */
+main input[type="text"],
+main input[type="email"],
+main textarea {
+  /* ddの幅と同じにする */
+  width: 87%;
+  /* 文字とボーダーの間に余白を作る */
+  padding: 8px;
+  /* クリックしたときに線が太くなる、ボーダーの外に線ができる→なくす*/
+  outline: none;
+  border: 1px solid #504324;
+  border-radius: 5px;
+}
+dd textarea {
+  height: 12em;
+  line-height: 1.5;
+  resize: vertical;
+}
+main form button {
+  /* ボタンぽくするために中に余白を作りたい */
+  padding: 10px 22px 10px 30px;
+  letter-spacing: 8px;
+  border: unset;
+  color: #fff;
+  background-color: #8f6859;
+  border-radius: 5px;
+  cursor: pointer;
+}
+form p.button {
+  width: fit-content;
+  margin-left: auto;
+  margin-right: auto;
+  padding-top: 7px;
+}
+/* 不透明度:0.7 */
+main form button:hover {
+  background-color: #504324;
+}
+/* -------------------
+レスポンシブ　スマホ
+---------------------- */
+
+@media (max-width: 767px) {
+  /* 見出し */
+  article h1 {
+    font-size: 22px;
+    margin-bottom: 34px;
+    padding: 24px 46px;
+    background-image: url(../img/contact.img/title-mobile.svg);
+  }
+  /* お問い合わせに応じて…のp */
+  p.setumei {
+    font-size: 17px;
+    text-align: left;
+  }
+  dl div:first-child {
+    display: block;
+    padding-bottom: 50px;
+    align-items: flex-start;
+    gap: 175px;
+  }
+  dl div:nth-child(2) {
+    display: block;
+    padding-bottom: 50px;
+    align-items: flex-start;
+    gap: 102px;
+  }
+  dl div:nth-child(3) {
+    display: block;
+    padding-bottom: 50px;
+    align-items: flex-start;
+    gap: 70px;
+  }
+  dl div:nth-child(4) {
+    display: block;
+    padding-bottom: 50px;
+    align-items: flex-start;
+    gap: 75px;
+  }
+  main form {
+    width: 100%;
+    margin-left: auto;
+    margin-right: auto;
+    padding-left: 15px;
+  }
+
+  form dt {
+    font-size: 18px;
+    padding-bottom: 13px;
+  }
+  dd label {
+    font-size: 18px;
+    padding-bottom: 20px;
+  }
+
+  /* 幅:100%、内側余白:8px、アウトライン:なし */
+  main input[type="text"],
+  main input[type="email"],
+  main textarea {
+    /* ddの幅と同じにする */
+    width: 95%;
+    font-family: Zen Maru Gothic;
+    font-size: 18px;
+  }
+}

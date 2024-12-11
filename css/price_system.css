@@ -1,0 +1,420 @@
+@import url(common.css);
+section.praice {
+  margin-top: 70px;
+}
+/* タイトル背景 */
+h2.praice {
+  max-width: fit-content;
+  margin-left: auto;
+  margin-right: auto;
+  margin-bottom: 81px;
+  font-size: 35px;
+  color: #595959;
+  font-family: Zen Maru Gothic;
+  background-image: url(../img/praice_system.img/title-back.png);
+  background-repeat: no-repeat;
+  padding: 17px 129px 32px 129px;
+}
+/* ---------------------------------------------
+料金表
+-------------------------------------------------- */
+/* テーブル全体 */
+table {
+  width: 64%;
+  margin-left: auto;
+  margin-right: auto;
+  border: solid 2px rgba(143, 104, 89, 0.8);
+  border-collapse: collapse;
+}
+/* 各列に幅を指定 */
+.kinds {
+  width: 39%;
+}
+.heizitu {
+  width: 30%;
+}
+.holiday {
+  width: 30%;
+}
+/* 空白行に斜線を追加 */
+table th:empty {
+  background-image: linear-gradient(to top left, transparent, transparent 49%, #8f6859 49%, #8f6859 50%, /* 線の太さを細く調整 */ transparent 50%, transparent);
+}
+
+/* 平日・土日祝 */
+th {
+  color: #595959;
+  font-size: 22px;
+  border: solid 2px rgba(143, 104, 89, 0.8);
+  padding: 20px 50px;
+  text-align: center;
+  vertical-align: middle;
+}
+th.heizitu {
+  padding: 20px 60px;
+}
+/* 種類と料金 */
+td {
+  color: #2b2b2b;
+  font-size: 22px;
+  border: solid 1px rgba(143, 104, 89, 0.8);
+  text-align: center;
+  vertical-align: middle;
+}
+/* 種類の余白 */
+td.kinds {
+  padding: 20px 61px;
+}
+/* 補足説明 */
+span {
+  font-size: 15px;
+}
+/* テーブルと文字のフレックスボックス */
+div.praice-div {
+  display: flex;
+  flex-direction: column;
+  gap: 7px;
+  align-items: flex-end;
+}
+/* 注意書き */
+aside.praice-asaid {
+  color: #595959;
+  font-size: 15px;
+  margin-right: 208px;
+}
+/* ---------------------------------------------
+mobile料金表
+-------------------------------------------------- */
+.mobile-price {
+  display: none;
+}
+aside.m-price-asaid {
+  display: none;
+}
+
+/* ---------------------------------------------
+初めての方へ
+-------------------------------------------------- */
+/* タイトル */
+h2.cystem {
+  max-width: fit-content;
+  margin-left: auto;
+  margin-right: auto;
+  padding-top: 158px;
+  margin-bottom: 65px;
+  font-size: 35px;
+  color: #595959;
+  font-family: Zen Maru Gothic;
+}
+/* ずらし背景 */
+div.back {
+  background-image: url(../img/praice_system.img/hazimete-haikei.png);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: left 0 top 188px;
+}
+/* 説明文と写真のフレックスボックス */
+div.back div {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding-top: 17px;
+  padding-bottom: 116px;
+  background-image: url(../img/praice_system.img/yazirusi.svg);
+  background-repeat: no-repeat;
+  background-position: left 203px bottom 0px;
+}
+/* 説明文全体の幅 */
+dl {
+  max-width: 575px;
+}
+/* 見出し */
+dt {
+  color: #2b2b2b;
+  font-size: 25px;
+  padding-top: 30px;
+  padding-bottom: 30px;
+  text-align: left;
+  line-height: 1.5;
+}
+/* 説明文 */
+dd {
+  color: #2b2b2b;
+  font-size: 18px;
+  padding-bottom: 26px;
+  line-height: 1.5;
+}
+/* 靴を脱いでの説明文の幅 */
+dd.shoes {
+  max-width: 522px;
+  margin-left: auto;
+  margin-right: auto;
+}
+/* 靴を脱いでの説明文の幅 */
+
+dd.drink,
+dd.taiten {
+  max-width: 494px;
+  margin-left: auto;
+  margin-right: auto;
+}
+dd.attention {
+  color: #cd1b1b;
+}
+
+div.back div:last-child {
+  background-image: unset;
+}
+/* ---------------------------------------------
+お店からのお願い
+-------------------------------------------------- */
+/* 見出し*/
+section.please h2 {
+  max-width: fit-content;
+  margin-top: 164px;
+  margin-bottom: 60px;
+  margin-left: auto;
+  margin-right: auto;
+  padding-right: 222px;
+  padding-left: 222px;
+  padding-bottom: 20px;
+  font-size: 35px;
+  font-family: Zen Maru Gothic;
+  background-image: url(../img/praice_system.img/line.svg);
+  background-repeat: no-repeat;
+  background-position: left 0 bottom 0;
+}
+
+/* 注意事項 */
+section.please ul {
+  max-width: fit-content;
+  margin-left: auto;
+  margin-right: auto;
+  margin-bottom: 166px;
+  padding-left: 71px;
+}
+section.please li {
+  margin-bottom: 60px;
+  color: #2b2b2b;
+  line-height: 1.5;
+}
+section.please li:first-child {
+  background-image: url(../img/praice_system.img/hand.svg);
+  background-repeat: no-repeat;
+  padding-left: 116px;
+  padding-top: 5px;
+  padding-bottom: 11px;
+}
+section.please li:nth-child(2) {
+  background-image: url(../img/praice_system.img/camera.svg);
+  background-repeat: no-repeat;
+  padding-left: 116px;
+  padding-top: 19px;
+}
+section.please li:last-child {
+  background-image: url(../img/praice_system.img/food.svg);
+  background-repeat: no-repeat;
+  background-position: left 0 top 11px;
+  padding-left: 116px;
+}
+@media (max-width: 991px) {
+  div.back div {
+    gap: 20px;
+  }
+  table {
+    width: 90%;
+  }
+  /* 注意書き */
+  aside.praice-asaid {
+    margin-right: 80px;
+  }
+}
+
+@media (max-width: 767px) {
+  section.praice {
+    margin-top: 41px;
+  }
+
+  /* タイトル背景 */
+  h2.praice {
+    margin-bottom: 0px;
+    font-size: 25px;
+    background-image: url(../img/mobile-praice_system/m-title-back.svg);
+    background-repeat: no-repeat;
+    background-position: left 10px top 5px;
+    padding: 17px 85px 10px 68px;
+  }
+
+  /* PC用テーブル非表示 */
+  div.praice-div {
+    display: none;
+  }
+  table {
+    border: unset;
+  }
+
+  /* ---------------------------------------------
+料金表
+-------------------------------------------------- */
+  /* テーブル全体 */
+  table.mobile-price {
+    width: 90%;
+    margin-left: auto;
+    margin-right: auto;
+    border-collapse: collapse;
+  }
+  .mobile-price {
+    display: block;
+  }
+  td {
+    font-size: 20px;
+  }
+
+  /* 各列に幅を指定 */
+  .time {
+    width: 65%;
+    padding: 10px 35px;
+  }
+  .price {
+    width: 25%;
+    padding-left: 5px;
+    padding-right: 5px;
+  }
+  table.mobile-price caption {
+    font-size: 22px;
+    padding-bottom: 16px;
+    padding-top: 58px;
+  }
+  aside.m-price-asaid {
+    display: block;
+    max-width: fit-content;
+    margin-left: auto;
+    margin-right: 30px;
+    color: #595959;
+    font-size: 14px;
+    padding-top: 12px;
+  }
+
+  /* ---------------------------------------------
+初めての方へ
+-------------------------------------------------- */
+  /* タイトル */
+  h2.cystem {
+    padding-top: 84px;
+    margin-bottom: 10px;
+    font-size: 27px;
+  }
+  /* ずらし背景 */
+  div.back {
+    background-position: left 0 top 108px;
+  }
+
+  /* 説明文と写真のフレックスボックス */
+  div.back div {
+    flex-direction: column-reverse;
+    justify-content: unset;
+    gap: 30px;
+    padding: 0px 10px 116px 10px;
+    background-image: url(../img/praice_system.img/yazirusi.svg);
+    background-repeat: no-repeat;
+    background-position: left 157px bottom 0px;
+  }
+  /* 説明文全体の幅 */
+  dl {
+    width: unset;
+  }
+  /* 見出し */
+  dt {
+    font-size: 20px;
+    padding-top: 30px;
+    padding-bottom: 20px;
+    text-align: left;
+    line-height: 1.5;
+  }
+  dt.dt-m-1 {
+    padding-left: 30px;
+    background-image: url(../img/mobile-praice_system/m-1.svg);
+    background-repeat: no-repeat;
+    background-position: top 32px left 0;
+  }
+  dt.dt-m-2 {
+    padding-left: 30px;
+    background-image: url(../img/mobile-praice_system/m-2.svg);
+    background-repeat: no-repeat;
+    background-position: top 33px left 0;
+  }
+  dt.dt-m-3 {
+    padding-left: 30px;
+    background-image: url(../img/mobile-praice_system/m-3.svg);
+    background-repeat: no-repeat;
+    background-position: top 35px left 0;
+  }
+  dt.dt-m-4 {
+    padding-left: 30px;
+    background-image: url(../img/mobile-praice_system/m-4.svg);
+    background-repeat: no-repeat;
+    background-position: top 35px left 0;
+  }
+
+  /* 説明文 */
+  dd {
+    color: #2b2b2b;
+    font-size: 15px;
+    padding-bottom: 17px;
+    line-height: 1.5;
+  }
+  section.container div:last-child {
+    padding-bottom: 58px;
+  }
+  /* ---------------------------------------------
+お店からのお願い
+-------------------------------------------------- */
+  /* 見出し*/
+  section.please h2 {
+    margin-top: 65px;
+    margin-bottom: 65px;
+    padding-right: 49px;
+    padding-left: 36px;
+    padding-bottom: 10px;
+    font-size: 27px;
+    background-image: url(../img/mobile-praice_system/m-line.svg);
+  }
+  /* 注意事項 */
+  section.please ul {
+    margin-bottom: 58px;
+    padding-left: 15px;
+    padding-right: 15px;
+  }
+  section.please li {
+    margin-bottom: 60px;
+    color: #2b2b2b;
+    line-height: 1.5;
+  }
+
+  section.please li:first-child {
+    font-size: 17px;
+    background-image: url(../img/mobile-praice_system/m-hund.svg);
+    background-repeat: no-repeat;
+    background-position: left 5px top 3px;
+    padding-left: 46px;
+    padding-top: 0px;
+    padding-bottom: 0px;
+  }
+  section.please li:nth-child(2) {
+    font-size: 17px;
+    background-image: url(../img/mobile-praice_system/m-phot.svg);
+    background-repeat: no-repeat;
+    padding-left: 46px;
+    padding-top: 0px;
+  }
+  section.please li:last-child {
+    font-size: 17px;
+    background-image: url(../img/mobile-praice_system/m-food.svg);
+    background-repeat: no-repeat;
+    background-position: left 0 top 2px;
+    padding-left: 46px;
+  }
+  br.m-br {
+    display: none;
+  }
+}

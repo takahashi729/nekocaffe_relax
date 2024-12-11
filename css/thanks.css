@@ -1,0 +1,57 @@
+@import url(common.css);
+/* 全体上余白 */
+article {
+  padding-top: 72px;
+  padding-bottom: 66px;
+}
+/* 見出し */
+article h1 {
+  font-size: 35px;
+  font-family: Zen Maru Gothic;
+  color: #595959;
+  max-width: fit-content;
+  margin-left: auto;
+  margin-right: auto;
+  margin-bottom: 66px;
+  padding: 29px 124px;
+  background-image: url(../img/contact.img/title-back.svg);
+  background-repeat: no-repeat;
+  background-position: left 0 top 10px;
+}
+article p {
+  color: #595959;
+  text-align: center;
+  line-height: 1.8;
+}
+div.arigato {
+  width: fit-content;
+  margin-left: auto;
+  margin-right: auto;
+  padding: 40px 40px;
+  background-color: #ffffec;
+}
+p.link {
+  margin-bottom: 100px;
+}
+p.link a span {
+  letter-spacing: 1px;
+}
+p.link a {
+  max-width: 144px;
+  margin-left: auto;
+  margin-right: auto;
+  padding-top: 12px;
+  padding-bottom: 12px;
+  font-size: 16px;
+  color: #fff;
+  padding-left: 22px;
+  background-color: rgba(143, 104, 89, 0.87);
+  background-image: url(../img/link.svg);
+  background-repeat: no-repeat;
+  background-position: right 8px top 5px;
+  border-radius: 20px;
+  display: block;
+}
+p.link a:hover {
+  background-color: #504324;
+}

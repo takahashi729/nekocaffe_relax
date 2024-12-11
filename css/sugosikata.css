@@ -1,0 +1,278 @@
+@import url(common.css);
+
+/* 要素が横にはみ出さないようにする */
+main article {
+  width: 100vw;
+  overflow: hidden;
+}
+
+/* ------------------
+ネコと一緒に遊ぶ
+---------------------- */
+/* -----------------
+各項目の背景色
+-------------------- */
+div.yellow {
+  background-color: rgba(255, 250, 215, 0.9);
+}
+div.white {
+  background-color: #fff;
+}
+
+/* 背景黄色 */
+article div.yellow-asobu {
+  background-color: #fff;
+  background-image: url(../img/sugosikata.img/back-yellow.png);
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: left top 59px;
+}
+/* 猫カフェRelaxの過ごし方タイトル */
+main article h1 {
+  max-width: fit-content;
+  margin-left: auto;
+  margin-right: auto;
+  color: #595959;
+  font-family: "Zen Maru Gothic";
+  font-size: 35px;
+  padding: 34px 142px;
+  background-image: url(../img/sugosikata.img/title-hure-mu.png);
+  background-repeat: no-repeat;
+  background-position: left top;
+}
+
+/* 説明文と写真のフレックスボックス */
+article div.yellow-asobu div.flex,
+div.flex {
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  padding-top: 115px;
+  padding-bottom: 115px;
+}
+/* 漫画フレックスボックスとCafeフレックスボックスの子要素を入れ替える */
+.flex-book,
+.flex-cafe {
+  flex-direction: row-reverse;
+}
+
+/* 題名と項目の背景色  */
+dl {
+  background-color: #f1e4c3;
+  z-index: 1;
+}
+
+dl.asobu {
+  padding: 26px;
+  position: relative;
+}
+dl.book,
+dl.talk {
+  padding: 40px 26px 70px 26px;
+  position: relative;
+}
+dl.caffe,
+dl.freedom {
+  padding: 32px 26px 45px 26px;
+  position: relative;
+}
+
+/* 説明文の背景ずらし */
+dl.asobu::before {
+  content: "";
+  position: absolute;
+  top: 30px;
+  right: 25px;
+  width: 431px;
+  height: 267px;
+  background-color: rgba(241, 228, 195, 0.5); /* 四角形の背景色 */
+  z-index: -1;
+}
+dl.talk::before,
+dl.freedom::before {
+  content: "";
+  position: absolute;
+  top: 30px;
+  right: 25px;
+  width: 431px;
+  height: 249px;
+  background-color: rgba(241, 228, 195, 0.5); /* 四角形の背景色 */
+  z-index: -1;
+}
+dl.book::before,
+dl.caffe::before {
+  content: "";
+  position: absolute;
+  top: 30px;
+  left: 25px;
+  width: 431px;
+  height: 249px;
+  background-color: rgba(241, 228, 195, 0.5); /* 四角形の背景色 */
+  z-index: -1;
+}
+/* タイトル */
+dt {
+  font-family: "Zen Maru Gothic";
+  font-size: 30px;
+  text-align: center;
+  padding-bottom: 20px;
+}
+/* 説明 */
+dd {
+  word-wrap: break-word;
+  max-width: 380px;
+  margin-left: auto;
+  margin-right: auto;
+  color: #595959;
+  font-size: 20px;
+  line-height: 38px;
+}
+/* ----------------
+下部コメント
+------------------- */
+article p.bottom-coment {
+  font-size: 25px;
+  text-align: center;
+  line-height: 274px;
+  background-image: url(../img/sugosikata.img/sugosikata-maru.png);
+  background-repeat: no-repeat;
+  background-position: right 384px top 68px;
+}
+
+/* -------------------
+レスポンシブ　iPad
+---------------------- */
+
+@media (max-width: 991px) {
+  /* 説明文と写真のフレックスボックス */
+  article div.yellow-asobu div.flex,
+  div.flex {
+    gap: 20px;
+    justify-content: space-evenly;
+  }
+}
+
+/* -------------------
+レスポンシブ　スマホ
+---------------------- */
+
+@media (max-width: 767px) {
+  div.yellow {
+    padding-bottom: 50px;
+  }
+  /* 画像の大きさを変える */
+  img.asobu-phot,
+  p.huwa4 img {
+    max-width: 280px;
+    height: auto;
+  }
+  /* メインビジュアル */
+  main p.main-visual img {
+    height: 297px;
+    object-fit: cover;
+  }
+  /* 背景黄色(ずらし） */
+  article div.yellow-asobu {
+    background-position: left top 40px;
+  }
+  /* 猫カフェRelaxの過ごし方タイトル */
+  main article h1 {
+    max-width: fit-content;
+    margin-left: auto;
+    margin-right: auto;
+    font-size: 20px;
+    text-align: center;
+    padding: 25px 57px;
+    background-image: url(../img/mobile-sugosikata.img/m-title-back.png);
+    background-position: left 0px top 11px;
+  }
+  /* 説明文と写真のフレックスボックスを縦にする */
+  article div.yellow-asobu div.flex {
+    flex-direction: column;
+    padding-top: 60px;
+    padding-bottom: 0;
+  }
+  div.flex {
+    flex-direction: column;
+    gap: 58px;
+    padding-top: 80px;
+    padding-bottom: 0;
+  }
+  div.flex p {
+    max-width: fit-content;
+    margin-left: auto;
+  }
+
+  /* 項目、説明文背景余白 */
+  dl {
+    margin-right: auto;
+    z-index: 1;
+  }
+  dl.asobu {
+    padding: 23px 38px;
+    position: relative;
+  }
+  dl.book,
+  dl.talk {
+    padding: 27px 38px 37px 38px;
+    position: relative;
+  }
+  dl.caffe,
+  dl.freedom {
+    padding: 25px 38px 34px 38px;
+    position: relative;
+  }
+  /* 説明文の背景ずらし */
+  dl.asobu::before {
+    top: 23px;
+    left: 17px;
+    width: 280px;
+    height: 170px;
+  }
+  dl.talk::before,
+  dl.freedom::before {
+    left: 17px;
+    width: 280px;
+    height: 159px;
+  }
+  dl.book::before,
+  dl.caffe::before {
+    left: 17px;
+    width: 280px;
+    height: 159px;
+  }
+
+  /* ----------------------
+文字共通
+-------------------------- */
+  /* タイトル */
+  dt {
+    font-size: 20px;
+    padding-bottom: 15px;
+  }
+  /* 説明 */
+  dd {
+    max-width: 204px;
+    margin-left: auto;
+    margin-right: auto;
+    color: #595959;
+    font-size: 14px;
+    line-height: 22px;
+  }
+  /* -----------------
+各項目の背景色
+-------------------- */
+  div.yellow,
+  div.white {
+    background-color: #ffffec;
+  }
+  /* ----------------
+下部コメント
+------------------- */
+  article p.bottom-coment {
+    font-size: 15px;
+    line-height: 138px;
+    background-image: url(../img/mobile-sugosikata.img/m-coment-back.png);
+    background-position: right 105px top 18px;
+  }
+}

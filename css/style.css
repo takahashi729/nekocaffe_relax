@@ -1,0 +1,334 @@
+@import url("https://fonts.googleapis.com/css2?family=Kosugi+Maru&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Roboto+Slab:wght@100..900&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Roboto+Slab:wght@100..900&family=Zen+Maru+Gothic:wght@300;400;500;700;900&display=swap");
+
+/* テキストのデフォルト書式 */
+body {
+  color: #8f6859;
+  font-family: "Kosugi Maru", sans-serif;
+  font-size: 20px;
+  background-color: #fff;
+  line-height: normal;
+}
+/* aリンクの書式 */
+a {
+  color: inherit;
+  text-decoration: none;
+}
+/* コンテナ幅 */
+.container {
+  width: 1140px;
+  margin-left: auto;
+  margin-right: auto;
+  padding-left: 15px;
+  padding-right: 15px;
+}
+/* 共通リンク */
+main section p.link {
+  padding-top: 50px;
+}
+main section p.link a {
+  width: 144px;
+  margin-left: auto;
+  margin-right: auto;
+  padding-top: 12px;
+  padding-bottom: 12px;
+  font-size: 16px;
+  color: #fff;
+  padding-left: 22px;
+  background-color: rgba(143, 104, 89, 0.87);
+  background-image: url(../img/link.svg);
+  background-repeat: no-repeat;
+  background-position: right 8px top 5px;
+  border-radius: 20px;
+  display: block;
+}
+main section p.link a:hover {
+  background-color: #504324;
+}
+
+/* ----------------
+ヘッター
+-------------------*/
+header {
+  background-color: rgba(254, 243, 216, 0.8);
+  position: sticky;
+  top: 0;
+  z-index: 1;
+}
+header div.container nav {
+  padding-top: 12px;
+  padding-bottom: 12px;
+}
+/* バーの設定 */
+header div.container nav ul {
+  width: 1140px;
+  margin-left: auto;
+  margin-right: auto;
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+}
+header div.container nav li a {
+  padding: 5px;
+  border-radius: 15px;
+}
+/* マウスオーバー時のホバー */
+header div.container nav li a:hover {
+  background-color: rgba(180, 168, 137, 0.9);
+}
+/* 英語の文字 */
+header div.container nav ul span.english {
+  font-size: 23px;
+  padding-left: 2px;
+}
+/* 日本語文字 */
+header div.container nav ul span.defo {
+  padding-left: 4px;
+}
+/* アイコンと文字のFlex box */
+header div.container nav a {
+  display: flex;
+  align-items: center;
+}
+
+/* ----------------
+コンセプト
+------------------- */
+main section.concept div.container h2 {
+  color: #595959;
+  font-size: 65px;
+  font-family: "Roboto Slab", serif;
+  padding-top: 80px;
+  text-align: center;
+}
+main section.concept p.concept-1 {
+  font-size: 24px;
+  text-align: center;
+  padding-top: 47px;
+}
+main section.concept p.concept-2 {
+  font-size: 19px;
+  text-align: center;
+  padding-top: 34px;
+  line-height: 30px;
+}
+
+main section.concept p.concept-3 {
+  font-size: 19px;
+  text-align: center;
+  padding-top: 45px;
+  padding-bottom: 96px;
+  line-height: 30px;
+}
+/* コンセプト背景 */
+main section.concept {
+  background-image: url(../img/concept.png);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+}
+
+/* -----------------
+過ごし方
+-------------------- */
+
+main section.sugosikata div.bo-da- {
+  border: 1px solid #595959;
+  width: 490px;
+  margin-top: -70px;
+  margin-left: 535px;
+  position: relative;
+  z-index: 1;
+}
+main section.sugosikata div.bo-da- h2 {
+  color: #595959;
+  font-size: 45px;
+  font-family: "Zen Maru Gothic", serif;
+  text-align: center;
+  padding-top: 27px;
+}
+/* 過ごし方説明文 */
+main section.sugosikata div.bo-da- p.setumei {
+  font-size: 20px;
+  line-height: 39px;
+  text-align: center;
+  padding-top: 27px;
+}
+/* リンク位置 */
+main section.sugosikata div.bo-da- p.sugosikata-link {
+  padding-top: 13px;
+  padding-bottom: 24px;
+  padding-right: 18px;
+}
+/* 詳しく見るリンク */
+main section.sugosikata div.bo-da- p.sugosikata-link a {
+  width: 144px;
+  margin-left: auto;
+  padding-top: 12px;
+  padding-bottom: 12px;
+  font-size: 16px;
+  color: #fff;
+  padding-left: 22px;
+  background-color: rgba(143, 104, 89, 0.87);
+  background-image: url(../img/link.svg);
+  background-repeat: no-repeat;
+  background-position: right 8px top 5px;
+  border-radius: 20px;
+  display: block;
+}
+main section.sugosikata div.bo- p.link a:hover {
+  background-color: #504324;
+}
+
+/* 店内写真 */
+main section.sugosikata div.container p.picture {
+  padding-top: 67px;
+  padding-left: 105px;
+}
+/* コンセプト　装飾配置 */
+main section.sugosikata {
+  background-color: #fff;
+  /* 背景六角形 三角形　四角形　猫写真*/
+  background-image: url(../img/rokukkei.svg), url(../img/sannkaku.svg), url(../img/shikaku.svg), url(../img/neko-5.png);
+  background-repeat: no-repeat;
+  background-position: left 9px center, left 527px bottom 38px, right 514px top 46px, right 2px bottom 137px;
+  padding-bottom: 78px;
+}
+/* ----------------------
+猫の紹介
+------------------------ */
+main section.syoukai {
+  background-color: #ffffec;
+  padding-bottom: 52px;
+  background-image: url(../img/neko-silhouette.png), url(../img/nikukyuu-2.png);
+  background-repeat: no-repeat;
+  background-position: right 593px top 42px, left 610px top 42px;
+}
+main section.syoukai div.container h2 {
+  color: #595959;
+  font-family: "Zen Maru Gothic", serif;
+  font-size: 45px;
+  text-align: center;
+  padding-top: 61px;
+  padding-bottom: 29px;
+}
+main section.syoukai div.container p.neko-setumei {
+  color: #8f6859;
+  font-size: 25px;
+  text-align: center;
+  padding-bottom: 63px;
+}
+/* 猫紹介　写真 */
+main section.syoukai div.container div.neko {
+  display: flex;
+  justify-content: center;
+  gap: 80px;
+}
+main section.syoukai div.neko p.neko-hover a:hover {
+  opacity: 0.7;
+}
+/* -------------------
+お知らせ
+---------------------- */
+/* 背景画像 */
+main section.news {
+  background-image: url(../img/neko-5-1.png), url(../img/maru.svg);
+  background-repeat: no-repeat;
+  background-position: left 34px top 269px, right 30px top 230px;
+}
+main section.news div.container h2 {
+  color: #595959;
+  font-size: 45px;
+  font-family: "Zen Maru Gothic", serif;
+  text-align: center;
+  padding-top: 74px;
+  padding-bottom: 50px;
+  background-image: url(../img/line-left.svg);
+  background-repeat: no-repeat;
+  background-position: center bottom;
+}
+/* 日時 */
+main section.news div.container div dt {
+  color: #000;
+  font-size: 26px;
+  padding-top: 40px;
+  padding-bottom: 28px;
+  padding-left: 166px;
+}
+/* 内容 */
+main section.news div.container div dd {
+  font-size: 22px;
+  padding-bottom: 40px;
+  padding-left: 166px;
+  background-image: url(../img/Line-right.svg);
+  background-repeat: no-repeat;
+  background-position: center bottom;
+}
+/* リンク位置 */
+main section.news p.link {
+  padding-bottom: 132px;
+}
+
+/* --------------------
+フッター
+----------------------- */
+/* 背景画像 */
+footer {
+  background-image: url(../img/footer.png);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+}
+
+footer div.footer {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+/* よくある質問、お問い合わせ */
+footer ul.savu {
+  color: #fff;
+  font-size: 24px;
+  text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+  display: flex;
+  align-items: center;
+  gap: 35px;
+  padding-top: 8px;
+}
+footer ul.savu li a {
+  padding-left: 10px;
+  padding-bottom: 20px;
+}
+footer ul.savu li a:hover {
+  background-image: url(../img/Line\ 12.svg);
+  background-repeat: no-repeat;
+  background-position: left bottom;
+}
+
+/* SNS */
+footer ul.sns {
+  display: flex;
+  gap: 40px;
+  align-items: center;
+  padding-top: 5px;
+}
+/* 著作権 */
+footer p.cyosakukenn {
+  color: #000;
+  font-family: "Zen Maru Gothic";
+  text-align: center;
+  padding-top: 254px;
+  padding-bottom: 19px;
+  font-weight: bolder;
+}
+/* ご予約ボタン、固定 */
+footer p.yoyaku {
+  position: fixed;
+  right: 43px;
+  bottom: 25px;
+  opacity: 0.8;
+}
+footer p.yoyaku a:hover {
+  opacity: 0.7;
+}

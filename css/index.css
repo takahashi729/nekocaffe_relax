@@ -1,0 +1,618 @@
+@import url(common.css);
+
+/* -----------------
+メインビジュアル
+-------------------- */
+
+/* メインビジュアルの画像 */
+main p.visual {
+  position: relative;
+  max-width: 100%;
+  height: 100%;
+}
+/* ロゴ→ ロゴだけdivで囲みコンテナ幅に入れる。widthで幅をめいっぱい広げる */
+main div.logo {
+  position: absolute;
+  top: 10%;
+  left: 0;
+  width: 100%;
+  /* ロゴの位置を右側に寄せる */
+  text-align: right;
+  /* background-color: aqua; */
+}
+
+/* ----------------
+コンセプト　PC
+------------------- */
+/* コンセプト */
+main section.concept div.container h2 {
+  color: #595959;
+  font-size: 65px;
+  font-family: "Roboto Slab", serif;
+  padding-top: 80px;
+  text-align: center;
+}
+/* 説明　１行目 */
+main section.concept p.concept-1 {
+  font-size: 24px;
+  text-align: center;
+  padding-top: 47px;
+}
+/* 説明　２行目 */
+main section.concept p.concept-2 {
+  font-size: 19px;
+  text-align: center;
+  padding-top: 34px;
+  line-height: 30px;
+}
+/* 説明　３行目 */
+main section.concept p.concept-3 {
+  font-size: 19px;
+  text-align: center;
+  padding-top: 45px;
+  padding-bottom: 96px;
+  line-height: 30px;
+}
+/* コンセプト背景 */
+main section.concept {
+  background-image: url(../img/concept-back.png);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+}
+
+/* -----------------
+過ごし方 pc
+-------------------- */
+/* 過ごし方の説明文囲み */
+main section.sugosikata div.bo-da- {
+  border: 1px solid #595959;
+  max-width: 490px;
+  margin-top: -70px;
+  margin-left: 500px;
+  margin-right: 35px;
+  position: relative;
+  z-index: 1;
+}
+/* 囲みの中の題名 */
+main section.sugosikata div.bo-da- h2 {
+  color: #595959;
+  font-size: 45px;
+  font-family: "Zen Maru Gothic", serif;
+  text-align: center;
+  padding-top: 27px;
+}
+/* 過ごし方説明文 */
+main section.sugosikata div.bo-da- p.setumei {
+  font-size: 20px;
+  line-height: 39px;
+  text-align: center;
+  padding-top: 27px;
+}
+/* リンク位置 */
+main section.sugosikata div.bo-da- p.sugosikata-link {
+  padding-top: 13px;
+  padding-bottom: 24px;
+  padding-right: 18px;
+}
+/* 詳しく見るリンク */
+main section.sugosikata div.bo-da- p.sugosikata-link a {
+  max-width: 144px;
+  margin-left: auto;
+  padding-top: 12px;
+  padding-bottom: 12px;
+  font-size: 16px;
+  color: #fff;
+  padding-left: 22px;
+  background-color: rgba(143, 104, 89, 0.87);
+  background-image: url(../img/link.svg);
+  background-repeat: no-repeat;
+  background-position: right 8px top 5px;
+  border-radius: 20px;
+  display: block;
+}
+/* リンクのホバー */
+main section.sugosikata div.bo-da- p.sugosikata-link a:hover {
+  background-color: #504324;
+}
+
+/* 店内写真 */
+main section.sugosikata div.container p.picture {
+  padding-top: 67px;
+  padding-left: 105px;
+}
+/* 過ごし方背景　図形配置 */
+main section.sugosikata {
+  background-color: #fff;
+  /* 背景六角形 三角形　四角形*/
+  background-image: url(../img/shikaku.svg), url(../img/sannkaku.svg);
+  background-repeat: no-repeat;
+  background-position: left 238px top 410px, right 261px top 40px;
+  padding-bottom: 78px;
+}
+
+/* -----------------
+過ごし方 mobile
+-------------------- */
+/* 過ごし方説明文囲み */
+div.sugosikata-mobile section.sugosikta-m-bo-da- {
+  display: none;
+  border: 1px solid rgba(143, 104, 89, 0.8);
+  max-width: 304px;
+  padding: 18px 15px 10px 15px;
+  margin-top: 0px;
+  margin-left: auto;
+  margin-right: auto;
+  margin-bottom: 52px;
+}
+/* 囲みの中の題名 */
+section.sugosikta-m-bo-da- h2 {
+  color: #595959;
+  font-size: 30px;
+  font-family: "Zen Maru Gothic", serif;
+  text-align: center;
+}
+/* 過ごし方説明文 */
+section.sugosikta-m-bo-da- p {
+  font-size: 19px;
+  line-height: 30px;
+  text-align: left;
+  padding-top: 12px;
+  padding-bottom: 16px;
+}
+/* 詳しく見るリンク */
+section.sugosikta-m-bo-da- p.mobile-link a {
+  max-width: 144px;
+  margin-left: auto;
+  margin-right: auto;
+  padding-top: 5px;
+  padding-bottom: 5px;
+  font-size: 16px;
+  color: #fff;
+  padding-left: 22px;
+  background-color: rgba(143, 104, 89, 0.87);
+  background-image: url(../img/link.svg);
+  background-repeat: no-repeat;
+  background-position: right 10px top 5px;
+  border-radius: 20px;
+  display: block;
+}
+/* リンクのホバー */
+section.sugosikta-m-bo-da- p.mobile-link a:hover {
+  background-color: #504324;
+}
+
+/* ----------------------
+猫の紹介
+------------------------ */
+/* 背景色、モバイル用のposition: relative; */
+main section.syoukai {
+  position: relative;
+  background-color: #ffffec;
+  padding-bottom: 52px;
+}
+/* 題名　シルエット２つ背景画像 */
+main section.syoukai div.container h2 {
+  max-width: fit-content;
+  margin-left: auto;
+  margin-right: auto;
+  color: #595959;
+  font-family: "Zen Maru Gothic", serif;
+  font-size: 45px;
+  text-align: center;
+  padding-top: 61px;
+  padding-bottom: 29px;
+  padding-right: 206px;
+  padding-left: 189px;
+  background-image: url(../img/neko-silhouette.png), url(../img/nikukyuu-2.png);
+  background-repeat: no-repeat;
+  background-position: right 0 top 42px, left 0 top 42px;
+}
+/* 説明文 */
+main section.syoukai div.container p.neko-setumei {
+  color: #8f6859;
+  font-size: 25px;
+  line-height: 1.5;
+  text-align: center;
+  padding-bottom: 63px;
+}
+/* 猫紹介　写真 */
+main section.syoukai div.container div.neko {
+  display: flex;
+  justify-content: center;
+  gap: 80px;
+}
+/* 写真のホバー */
+section.syoukai div.neko a:hover {
+  opacity: 0.7;
+}
+
+/* ----------------------
+猫の紹介 モバイル
+------------------------ */
+/* モバイル用の肉球画像を非表示 */
+div.m-nikukyu {
+  display: none;
+}
+/* 肉球画像左側 */
+div.m-nikukyu p.first {
+  position: absolute;
+  left: 68px;
+  top: 13px;
+}
+/* 肉球画像右側 */
+div.m-nikukyu p.second {
+  position: absolute;
+  left: 109px;
+  top: 23px;
+}
+
+/* -------------------
+モバイル写真
+---------------------- */
+/* 背景色 */
+div.m-picture {
+  display: none;
+  padding-bottom: 59px;
+  background-color: rgba(235, 227, 213, 0.7);
+  background-image: url(../img/mobile-index.img/m-neko-sukei1.svg), url(../img/mobile-index.img/m-neko-sukei2.svg), url(../img/mobile-index.img/m-neko-sukei3.svg);
+  background-repeat: no-repeat;
+  background-position: left 15px top 128px, right 15px top 353px, left 15px bottom 103px;
+}
+/*---------------------------------------------
+ネコの画像三枚 */
+div.m-picture p.m-neko-pic1 {
+  padding-left: 177px;
+  padding-top: 48px;
+}
+div.m-picture p.m-neko-pic2 {
+  padding-left: 15px;
+  padding-top: 27px;
+}
+div.m-picture p.m-neko-pic3 {
+  padding-left: 175px;
+  padding-top: 23px;
+}
+/* ---------------------------------------- */
+
+/* -------------------
+お知らせ
+---------------------- */
+/* 背景画像 */
+main section.news {
+  position: relative;
+  background-image: url(../img/index.img/news-maru.png), url(../img/maru.svg);
+  background-repeat: no-repeat;
+  background-position: left 34px top 269px, right 30px top 230px;
+}
+/* 題名 */
+main section.news div.container h2 {
+  color: #595959;
+  font-size: 45px;
+  font-family: "Zen Maru Gothic", serif;
+  text-align: center;
+  padding-top: 74px;
+  padding-bottom: 50px;
+  background-image: url(../img/line-left.svg);
+  background-repeat: no-repeat;
+  background-position: center bottom;
+}
+/* 日時 */
+main section.news div.container div dt {
+  color: #000;
+  font-size: 26px;
+  padding-top: 40px;
+  padding-bottom: 28px;
+  padding-left: 166px;
+}
+/* 内容　背景画像下の線 */
+main section.news div.container div dd {
+  font-size: 22px;
+  line-height: 1.5;
+  padding-bottom: 40px;
+  padding-left: 166px;
+  background-image: url(../img/line-left.svg);
+  background-repeat: no-repeat;
+  background-position: center bottom;
+}
+dd a:hover {
+  opacity: 0.7;
+}
+/* リンク位置 */
+main section.news p.link {
+  padding-bottom: 132px;
+}
+/* ----------------------
+ニュース モバイル
+------------------------ */
+/* モバイル用の肉球画像を非表示 */
+div.m-news-nikukyu {
+  display: none;
+}
+div.m-news-nikukyu p.n-first {
+  position: absolute;
+  right: 27px;
+  top: 32px;
+  transform: rotate(-262deg);
+}
+div.m-news-nikukyu p.n-second {
+  position: absolute;
+  right: 62px;
+  top: 47px;
+  transform: rotate(-262deg);
+}
+
+/* -------------------
+レスポンシブipad
+---------------------- */
+
+/* -----------------
+メインビジュアル
+-------------------- */
+
+@media (max-width: 991px) {
+  /* ロゴの大きさを変える */
+  main div.logo img {
+    width: 130px;
+  }
+  /* ロゴの絶対配置の場所 */
+  main div.logo {
+    position: absolute;
+    top: 7%;
+    left: -80px;
+  }
+  /* -----------------
+過ごし方
+-------------------- */
+  /* 過ごし方背景　図形配置 */
+
+  main section.sugosikata {
+    /* 背景六角形 三角形　四角形*/
+    background-image: unset;
+    padding-bottom: 78px;
+  }
+  /* 過ごし方の説明文囲み */
+  main section.sugosikata div.bo-da- {
+    max-width: 420px;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 0px;
+    position: unset;
+  }
+  /* 店内写真 */
+  main section.sugosikata div.container p.picture {
+    max-width: 420px;
+    margin-left: auto;
+    margin-right: auto;
+    padding-bottom: 70px;
+    padding-left: 0;
+  }
+  /* -------------------
+お知らせ
+---------------------- */
+  /* 背景画像 */
+  main section.news {
+    background-image: url(../img/maru.svg);
+    background-repeat: no-repeat;
+    background-position: right 30px top 230px;
+  }
+  /* 題名 */
+  main section.news div.container h2 {
+    background-image: url(../img/line-left.svg);
+    background-repeat: no-repeat;
+    background-position: center bottom;
+  }
+  /* 日時 */
+  main section.news div.container div dt {
+    padding-left: 30px;
+  }
+  /* 内容　背景画像下の線 */
+  main section.news div.container div dd {
+    padding-left: 30px;
+  }
+  /* リンク位置 */
+  main section.news p.link {
+    padding-bottom: 100px;
+  }
+
+  /* ----------------------
+猫の紹介
+------------------------ */
+  /* 題名　シルエット２つ背景画像 */
+  main section.syoukai div.container h2 {
+    font-size: 40px;
+  }
+  /* 猫紹介　写真 */
+  main section.syoukai div.container div.neko {
+    gap: 25px;
+  }
+}
+
+/* -------------------
+レスポンシブ　スマホ
+---------------------- */
+
+@media (max-width: 767px) {
+  /* -----------------
+メインビジュアル
+-------------------- */
+
+  /* メインビジュアル画像の縮小 */
+  main p.visual img {
+    width: 100%;
+  }
+  /* メインビジュアルのロゴをなくす */
+  main div.logo {
+    display: none;
+  }
+
+  /* ----------------
+コンセプト
+------------------- */
+  main section.concept div.container h2 {
+    font-size: 48px;
+    padding-top: 124px;
+  }
+  main section.concept p.concept-1 {
+    font-size: 23px;
+    padding-top: 38px;
+  }
+  main section.concept p.concept-2 {
+    font-size: 19px;
+    text-align: center;
+    padding-top: 35px;
+    line-height: 30px;
+  }
+
+  main section.concept p.concept-3 {
+    font-size: 19px;
+    padding-top: 35px;
+    padding-bottom: 154px;
+  }
+  /* コンセプト背景 */
+  main section.concept div.container {
+    background-color: #ffffec;
+    background-image: url(../img/mobile-concept-sikaku1.svg), url(../img/mobile-concept-sikaku2.svg);
+    background-repeat: no-repeat;
+    background-position: left 17px top 59px, right 17px bottom 40px;
+  }
+
+  /* -----------------
+過ごし方
+-------------------- */
+  /* PC版の説明文囲みを非表示 */
+  main section.sugosikata div.bo-da- {
+    display: none;
+  }
+  /* モバイル版の説明文囲みを表示 */
+  div.sugosikata-mobile section.sugosikta-m-bo-da- {
+    display: block;
+    margin-bottom: 67px;
+  }
+
+  /* 過ごし方　背景画像非表示 */
+  main section.sugosikata {
+    background-image: unset;
+    padding-bottom: 0px;
+    max-width: 347px;
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+  /* ----------------------
+猫の紹介
+------------------------ */
+  /* 肉球の画像表示 */
+  div.m-nikukyu {
+    display: block;
+  }
+  /* 猫のシルエット背景画像 */
+  main section.syoukai {
+    padding-bottom: 53px;
+    background-image: url(../img/mobile-index.img/syoukai-neko.png);
+    background-repeat: no-repeat;
+    background-position: right 56px top 11px;
+  }
+  /* 題名→背景画像外す */
+  main section.syoukai div.container h2 {
+    width: unset;
+    font-size: 30px;
+    padding-top: 62px;
+    padding-bottom: 21px;
+    padding-right: 0px;
+    padding-left: 0px;
+    background-image: unset;
+  }
+  /* 説明文 */
+  main section.syoukai div.container p.neko-setumei {
+    width: 246px;
+    margin-left: auto;
+    margin-right: auto;
+    font-size: 19px;
+    text-align: left;
+    padding-bottom: 48px;
+  }
+  /* 猫紹介　写真 */
+  main section.syoukai div.container div.neko {
+    display: block;
+  }
+
+  main section.syoukai div.container div.neko p.neko-hover {
+    padding-left: 10px;
+    padding-right: 10px;
+  }
+  /* slickのCSS */
+  .slick-next {
+    right: 10px;
+    top: 182px;
+  }
+  .slick-prev {
+    left: 10px;
+    top: 182px;
+    z-index: 1;
+  }
+  .slick-prev:before,
+  .slick-next:before {
+    font-size: 35px;
+    color: #d1cea5;
+  }
+  .slick-prev,
+  .slick-next {
+    width: 30px;
+    height: 30px;
+  }
+
+  /* -------------------
+モバイル　猫の写真
+---------------------- */
+  div.m-picture {
+    display: block;
+  }
+
+  /* -------------------
+お知らせ
+---------------------- */
+  /* 背景画像 */
+  main section.news {
+    background-image: url(../img/mobile-index.img/m-maru-up.svg), url(../img/mobile-index.img/m-maru-bottom\ .svg);
+    background-repeat: no-repeat;
+    background-position: left 16px top 84px, right 15px bottom 166px;
+  }
+  /* お知らせのボーダー */
+  main section.news dl {
+    border: 1px solid #595959;
+    padding-bottom: 40px;
+    margin-left: 16px;
+    margin-right: 16px;
+  }
+  /* 題名 */
+  main section.news div.container h2 {
+    font-size: 30px;
+    padding-top: 62px;
+    padding-bottom: 21px;
+    background-image: unset;
+  }
+  /* 日時 */
+  main section.news div.container div dt {
+    font-size: 24px;
+    padding-top: 40px;
+    padding-bottom: 30px;
+    padding-left: 28px;
+  }
+  /* 内容 */
+  main section.news div.container div dd {
+    padding-right: 16px;
+    padding-left: 29px;
+    background-image: unset;
+    background-image: url(../img/mobile-index.img/m-line-left.svg);
+    background-repeat: no-repeat;
+    background-position: center bottom;
+  }
+  /* リンク位置 */
+  main section.news p.link {
+    padding-bottom: 100px;
+  }
+  div.m-news-nikukyu {
+    display: block;
+  }
+}

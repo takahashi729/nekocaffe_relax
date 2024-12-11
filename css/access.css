@@ -1,0 +1,328 @@
+@import url(common.css);
+/* アクセスタイトル */
+h1 {
+  max-width: fit-content;
+  margin-left: auto;
+  margin-right: auto;
+  color: #595959;
+  font-size: 35px;
+  padding: 27px 90px;
+  background-image: url(../img/access.img/access-title.png);
+  background-repeat: no-repeat;
+}
+/* 上余白 */
+div.access {
+  margin-top: 122px;
+}
+/* アクセス背景（タイトルとのずれ） */
+div.back-yellow {
+  background-image: url(../img/access.img/access-back.png);
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: left 0 top 40px;
+}
+/* 地図の大きさ */
+iframe {
+  max-width: 360px;
+  height: 360px;
+}
+/* -----------モバイル用の注意事項------------ */
+/* PCの時は非表示 */
+div.m-train-car {
+  display: none;
+  max-width: fit-content;
+  margin-left: auto;
+  margin-right: auto;
+}
+/* 説明文 */
+div.m-train p,
+div.m-car p {
+  max-width: 260px;
+  color: #222;
+  font-size: 13px;
+  line-height: 1.5;
+}
+
+div.m-car p {
+  max-width: 254px;
+  color: #222;
+  font-size: 12px;
+  line-height: 1.5;
+}
+/* 電車のアイコン 車のアイコン */
+div.m-train,
+div.m-car {
+  display: flex;
+  align-items: center;
+  gap: 9px;
+  background-color: rgba(241, 228, 195, 0.5);
+  border-radius: 6px;
+  padding: 10px 15px 10px 15px;
+  margin-bottom: 20px;
+}
+/* ---------------------------------------------------------------------------- */
+
+/* 地図と住所などのフレックスボックス横並び */
+div.chizu-flex {
+  display: flex;
+  justify-content: space-evenly;
+  align-items: flex-end;
+  padding-top: 70px;
+}
+/* 項目と内容の横幅 */
+div.address {
+  max-width: 553px;
+}
+/* 項目と説明の横並びフレックスボックス */
+dl {
+  display: flex;
+  padding-bottom: 9px;
+  margin-bottom: 34px;
+}
+/* 項目と内容の間をあける
+左余白 */
+dl:first-child {
+  padding-left: 87px;
+  column-gap: 143px;
+  border-bottom: 1px solid #595959;
+}
+dl:nth-of-type(2) {
+  padding-left: 87px;
+  column-gap: 83px;
+  border-bottom: 1px solid #595959;
+}
+dl:nth-of-type(3) {
+  padding-left: 64px;
+  column-gap: 128px;
+  border-bottom: 1px solid #595959;
+}
+dl:nth-of-type(4) {
+  padding-left: 64px;
+  align-items: center;
+  column-gap: 40px;
+  border-bottom: 1px solid #595959;
+}
+
+/* 項目 */
+dt {
+  font-size: 23px;
+}
+/* 内容 */
+dd {
+  color: #222;
+  font-size: 20px;
+  line-height: 1.5;
+}
+/* 電車と車の説明の文字 */
+p {
+  color: #222;
+  font-size: 18px;
+  line-height: 1.5;
+}
+/* 電車のアイコン 車のアイコン*/
+div.train,
+div.car {
+  display: flex;
+  align-items: center;
+  gap: 9px;
+}
+/* 車と電車の説明　フレックスボックス */
+div.train-car {
+  display: flex;
+  justify-content: space-evenly;
+  padding-top: 35px;
+  padding-bottom: 40px;
+}
+/* 第一種動物取扱業者標識 */
+dl.animal {
+  display: block;
+  max-width: fit-content;
+  margin: 100px auto 100px auto;
+  border-bottom: 1px solid #595959;
+}
+/* タイトル */
+dl.animal dt.animal-sign {
+  max-width: fit-content;
+  margin-left: auto;
+  margin-right: auto;
+  font-family: Zen Maru Gothic;
+  padding-top: 24px;
+  padding-bottom: 13px;
+  color: #222;
+  font-size: 25px;
+}
+/* 内容 */
+dd.sign {
+  max-width: fit-content;
+  margin-left: auto;
+  margin-right: auto;
+  padding-bottom: 10px;
+  color: #222;
+  font-size: 20px;
+}
+/* -------------------
+レスポンシブ　スマホ
+---------------------- */
+
+@media (max-width: 991px) {
+  /* 地図と住所などのフレックスボックス横並び */
+  div.chizu-flex {
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    padding-top: 70px;
+  }
+  /* 項目と内容の間をあける
+左余白 */
+  dl:first-child {
+    padding-left: 44px;
+    column-gap: 93px;
+  }
+  dl:nth-of-type(2) {
+    padding-left: 44px;
+    column-gap: 30px;
+  }
+  dl:nth-of-type(3) {
+    padding-left: 21px;
+    column-gap: 76px;
+  }
+  dl:nth-of-type(4) {
+    display: block;
+    padding-left: 21px;
+  }
+  dd.time {
+    max-width: fit-content;
+    margin-left: auto;
+    margin-right: auto;
+    padding-top: 13px;
+  }
+  /* 車と電車の説明　フレックスボックスなくす */
+  div.train-car {
+    display: block;
+    padding-top: 0px;
+    padding-bottom: 63px;
+  }
+  div.train {
+    padding-bottom: 20px;
+    padding-left: 23px;
+  }
+  div.car {
+    padding-left: 23px;
+  }
+  /* 第一種動物取扱業者標識 　余白*/
+  dl.animal {
+    margin: 50px auto 70px auto;
+  }
+}
+
+/* -------------------
+レスポンシブ　スマホ
+---------------------- */
+
+@media (max-width: 767px) {
+  /* アクセスタイトル */
+  h1 {
+    font-size: 22px;
+    padding: 20px 66px 21px 40px;
+    background-image: url(../img/mobile-access.img/m-title-back.png);
+    background-repeat: no-repeat;
+  }
+  /* 上余白 */
+  div.access {
+    margin-top: 50px;
+  }
+  /* アクセス背景（タイトルとのずれ） */
+  div.back-yellow {
+    background-image: url(../img/access.img/access-back.png);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: left 0 top 29px;
+  }
+  /* 地図と住所などのフレックスボックス横並びなくす */
+  div.chizu-flex {
+    display: block;
+    padding-top: 24px;
+  }
+  /* 地図の大きさ */
+  iframe {
+    max-width: 300px;
+    height: 300px;
+  }
+  div.iframe {
+    max-width: fit-content;
+    margin-left: auto;
+    margin-right: auto;
+    padding-bottom: 28px;
+  }
+  /* PC用の注意事項非表示 */
+  div.train-car {
+    display: none;
+  }
+  /* モバイル用の注意事項　表示 */
+  div.m-train-car {
+    display: block;
+  }
+  /* 項目と内容の横幅 */
+  div.address {
+    max-width: 300px;
+    margin-left: auto;
+    margin-right: auto;
+    padding-top: 50px;
+    padding-bottom: 26px;
+  }
+  /* 項目と内容の間をあける、左余白 */
+  dl:first-child {
+    padding-left: 29px;
+    column-gap: 59px;
+  }
+  dl:nth-of-type(2) {
+    padding-left: 29px;
+    column-gap: 34px;
+  }
+  dl:nth-of-type(3) {
+    padding-left: 14px;
+    column-gap: 65px;
+  }
+  dl:nth-of-type(4) {
+    display: block;
+    padding-left: 14px;
+  }
+
+  /* 項目 */
+  dt {
+    font-size: 17px;
+  }
+  /* 内容 */
+  dd {
+    font-size: 15px;
+  }
+  /* 営業時間だけフレックスボックス外す */
+  dd.time {
+    max-width: fit-content;
+    margin-left: auto;
+    margin-right: auto;
+    padding-top: 13px;
+  }
+  /* 第一種動物取扱業者標識にボーダーを作る */
+  dl.animal {
+    max-width: fit-content;
+    margin: 65px auto 65px auto;
+    padding: 29px 39px 19px 39px;
+    border: 1px solid #595959;
+    border-radius: 17px;
+  }
+  /* タイトル */
+  dl.animal dt.animal-sign {
+    padding-top: 0px;
+    padding-bottom: 13px;
+    font-size: 19px;
+  }
+  /* 内容 */
+  dd.sign {
+    max-width: fit-content;
+    margin-left: auto;
+    margin-right: auto;
+    padding-bottom: 10px;
+    font-size: 15px;
+  }
+}

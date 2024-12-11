@@ -1,0 +1,267 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>料金・システム-猫カフェRelax-</title>
+    <link rel="icon" href="favicon.png" type="image/png">
+    <link rel="apple-touch-icon" href="favicon.png">
+    <link rel="stylesheet" href="css/reset.css">
+    <link rel="stylesheet" href="css/price_system.css">
+    <script src="js/footerFixed.js"></script>
+    <script src="js/jquery-3.7.1.min.js"></script>
+
+</head>
+<body>
+    <header>
+        <div class="container">
+            <button class="hmenu "><span></span></button>
+
+            <nav>
+                <ul>
+                    <li>
+                        <a href="index.html">
+                            <img src="img/home.svg" alt="ホームへ">
+                            <span class="english">HOME</span>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="sugosikata.html">
+                            <img src="img/kao.svg" alt="過ごし方へ">
+                            <span class="defo">過ごし方</span>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="introduction.html">
+                            <img src="img/neko.svg" alt="猫ちゃんの紹介へ">
+                            <span class="defo">猫ちゃん紹介</span>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="price_system.html">
+                            <img src="img/money.svg" alt="料金、システムへ">
+                            <span class="defo">料金・システム</span>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="access.html">
+                            <img src="img/train.svg" alt="アクセスへ">
+                            <span class="defo">アクセス</span></a>
+                    </li>
+                    <li>
+                        <a href="">
+                            <img src="img/bag.svg" alt="ショップへ">
+                            <span class="english">SHOP</span>
+                        </a>
+                    </li>
+                </ul>
+            </nav>
+            <p><img src="img/mobile-index.img/nekorogo1.png" alt="モバイル時のロゴ"></p>
+        </div>
+
+    </header>
+
+    <main>
+        <section class="container praice">
+            <h2 class="praice">料金</h2>
+            <!-- 料金表PC -->
+            <div class="praice-div">
+                <table>
+                    <tbody>
+                        <tr>
+                            <th class="kinds"></th>
+                            <th class="heizitu">平日</th>
+                            <th class="holiday">土日祝</th>
+                        </tr>
+                        <tr>
+                            <td class="kinds one">30分<br>
+                                <span>ワンドリンク制</span>
+                            </td>
+                            <td class="heizitu">600円</td>
+                            <td class="holiday">800円</td>
+                        </tr>
+                        <tr>
+                            <td class="kinds">延長<br>
+                                <span>10分毎</span>
+                            </td>
+                            <td class="heizitu">200円</td>
+                            <td class="holiday">200円</td>
+                        </tr>
+                        <tr>
+                            <td class="kinds">フリータイム<br>
+                                <span>ドリンク飲み放題付</span>
+                            </td>
+                            <td class="heizitu">2600円</td>
+                            <td class="holiday">2800円</td>
+                        </tr>
+                    </tbody>
+                </table>
+                <aside class="praice-asaid">&#x203B;三歳未満のお子様は入場料無料</aside>
+            </div>
+            <!-- 料金表モバイル -->
+            <table class="mobile-price">
+                <caption>平日</caption>
+                <tbody class="m-tbody">
+                    <tr>
+                        <td class="time">30分<br>
+                            <span>ワンドリンク制</span>
+                        </td>
+                        <td class="price">600円</td>
+                    </tr>
+                    <tr>
+                        <td class="time">延長<br>
+                            <span>10分毎</span>
+                        </td>
+                        <td class="price">200円</td>
+                    </tr>
+                    <tr>
+                        <td class="time">フリータイム<br>
+                            <span>ドリンク飲み放題付</span>
+                        </td>
+                        <td class="price">2600円</td>
+                    </tr>
+                </tbody>
+            </table>
+            <aside class="m-price-asaid">&#x203B;三歳未満のお子様は入場料無料</aside>
+
+            <table class="mobile-price">
+                <caption>土日祝</caption>
+                <tbody class="m-tbody">
+                    <tr>
+                        <td class="time">30分<br>
+                            <span>ワンドリンク制</span>
+                        </td>
+                        <td class="price">800円</td>
+                    </tr>
+                    <tr>
+                        <td class="time">延長<br>
+                            <span>10分毎</span>
+                        </td>
+                        <td class="price">200円</td>
+                    </tr>
+                    <tr>
+                        <td class="time">フリータイム<br>
+                            <span>ドリンク飲み放題付</span>
+                        </td>
+                        <td class="praice">2800円</td>
+                    </tr>
+                </tbody>
+            </table>
+            <aside class="m-price-asaid">&#x203B;三歳未満のお子様は入場料無料</aside>
+
+        </section>
+        <div class="back">
+            <section class="container huwa">
+                <h2 class="cystem">初めての方へ</h2>
+                <div>
+                    <p><img src="img/praice_system.img/shoes.png" alt=""></p>
+                    <dl class="shoes">
+                        <dt class="dt-m-1">靴を下駄箱に入れ、スリッパに履き替えて下さい。</dt>
+
+                        <dd class="attention shoes">
+                            &#x203B;裸足での入店は安全上の理由からご遠慮いただいておりますので皆様に靴下の着用をお願いしております。（お忘れの方には店頭で販売もしております）
+                        </dd>
+
+                    </dl>
+                </div>
+                <div class="method">
+                    <p><img src="img/praice_system.img/rezi.png" alt=""></p>
+                    <dl>
+                        <dt class="dt-m-2">フリータイムの方は先払いをお願いします。</dt>
+                        <dd class="attention">
+                            &#x203B;時間制の方は後払いになります。
+                        </dd>
+                        <dd class="method">【支払い方法】<br>
+                            現金・クレジットカード・電子マネー・QRコード決済</dd>
+                    </dl>
+                </div>
+                <div>
+                    <p><img src="img/praice_system.img/cafe.png" alt=""></p>
+                    <dl>
+                        <dt class=" center dt-m-3">ドリンクのご注文</dt>
+                        <dd class="drink">時間制の方はワンドリンクのご注文をお願いします。
+                            フリータイムの方はドリンクの飲み放題がついております。</dd>
+                        <dd class="attention drink">
+                            &#x203B;食事のメニューはございません。
+                            飲食物の持ち込みはご遠慮いただいております。
+                        </dd>
+                    </dl>
+                </div>
+
+                <div>
+                    <p><img src="img/praice_system.img/taiten.png" alt=""></p>
+                    <dl>
+                        <dt class=" center dt-m-4">退店</dt>
+                        <dd class="taiten">入店時にお渡ししたストラップをスタッフにお渡しください。時間制の方は、入店時間より精算いたします。</dd>
+                        <dd class="attention">&#x203B;フリータイムのお客様は途中外出ができます。</dd>
+                    </dl>
+                </div>
+            </section>
+        </div>
+        <section class=" container please">
+            <h2 class="huwa2">お店からのお願い</h2>
+            <ul class="huwa3">
+                <li>猫ちゃんを追いかけたり、<br class="m-br">
+                    無理やり触ったりはしないでください。</li>
+                <li>猫ちゃんを撮影するときは<br class="m-br">
+                    フラッシュをOFFにしてください。</li>
+                <li>猫ちゃんに食べ物や飲み物を与えないでください。<br>
+                    猫ちゃん用のおやつを販売しておりますので<br class="m-br">
+                    そちらをお買い求めください。</li>
+            </ul>
+        </section>
+    </main>
+    <footer id="footer">
+        <div class="container">
+            <div class="footer">
+                <ul class="savu">
+                    <li><a href="#">よくある質問</a></li>
+                    <li><a href="contact.html">お問い合わせ</a></li>
+                </ul>
+                <ul class="sns">
+                    <li class="x"><a href="#">
+                            <picture>
+                                <!-- スマホのXアイコン -->
+                                <source media="(max-width:767px)" srcset="img/mobile-index.img/m-x.svg">
+                                <img src="img/X.svg" alt="Xへ">
+                            </picture>
+
+                        </a></li>
+                    <li><a href="#">
+                            <picture>
+                                <!-- スマホのユーチューブアイコン -->
+                                <source media="(max-width:767px)" srcset="img/mobile-index.img/m-YouTube.svg">
+                                <img src="img/YouTube.svg" alt="YouTubeへ">
+                            </picture>
+                        </a></li>
+                    <li><a href="#">
+                            <picture>
+                                <!-- スマホのインスタアイコン -->
+                                <source media="(max-width:767px)" srcset="img/mobile-index.img/m-insta.svg">
+                                <img src="img/insta.svg" alt="Instagramへ">
+                            </picture>
+
+                        </a></li>
+                </ul>
+            </div>
+
+            <div class="cyosakuken-shikaku">
+                <p class="cyosakukenn"><small>&copy;2024 Nekocaffe Relax <span>All Rights Reserved.</span></small></p>
+            </div>
+            <p class="yoyaku"><a href="#">
+                    <picture>
+                        <!-- スマホの予約はこちら -->
+                        <source media="(max-width:767px)" srcset="img/m-yoyaku.png">
+                        <img src="img/yoyaku-botan.png" alt="予約はこちら">
+                    </picture>
+                </a></p>
+        </div>
+    </footer>
+
+    <script src="https://unpkg.com/scrollreveal"></script>
+    <script src="js/price_system.js"></script>
+    <script src="js/script.js"></script>
+
+</body>
+
+</html>
